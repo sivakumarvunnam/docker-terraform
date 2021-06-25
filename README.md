@@ -9,7 +9,7 @@ This is explained below in [Configuration](#configuration).
 Run as a command:
 
 ```bash
-docker run --rm -v ~/.aws:/home/terraform/.aws -v $(pwd):/opt/terraform contino/terraform --version
+docker run --rm -v ~/.aws:/home/terraform/.aws -v $(pwd):/opt/terraform sivakumarvunnam/terraform:0.15.5 --version
 ```
 
 ### Bash
@@ -18,7 +18,7 @@ for quick access, with correct mounting points:
 
 ```bash
 function terraform() {
-  docker run --rm -it -v ~/.aws:/home/terraform/.aws -v $(pwd):/opt/terraform contino/terraform "$@";
+  docker run --rm -it -v ~/.aws:/home/terraform/.aws -v $(pwd):/opt/terraform sivakumarvunnam/terraform:0.15.5 "$@";
 }
 ```
 
